@@ -15,12 +15,17 @@
     "require": {
         "composer-plugin-api": "^1.0 || ^2.0",
         "composer/installers": "^1.2",
-        "symfony/yaml": "~3.0|^4.4",
-        "symfony/finder": "~3.0|^4.4"
+        "symfony/yaml": "~3.0|^4.4|^6.0",
+        "symfony/finder": "~3.0|^4.4|^6.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {"Drupal\\Console\\Composer\\Plugin\\": "src"}
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
     }
 }
